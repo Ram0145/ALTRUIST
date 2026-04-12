@@ -700,9 +700,9 @@ export default function AltruistApp({ user, onSignOut }: Props) {
         {tab==="stats"&&<>
           {allDates.length>0&&<div style={{display:"flex",flexWrap:"wrap",gap:10,marginBottom:8}}>
             <MetricCard label="Days Logged" value={allDates.length} unit="total"/>
-            <MetricCard label="Avg Mood"    value={safeAvg(last30.map(d=>logMap[d]?.mood??0).filter(Boolean))?.toFixed(1)} unit="out of 5"  color="#8a6030"/>
-            <MetricCard label="Avg Energy"  value={safeAvg(last30.map(d=>logMap[d]?.energy??0).filter(Boolean))?.toFixed(1)} unit="out of 10" color={C.green}/>
-            <MetricCard label="Avg Prod."   value={safeAvg(last30.map(d=>logMap[d]?.productivity??0).filter(Boolean))?.toFixed(1)} unit="out of 10" color={C.purple}/>
+            <MetricCard label="Avg Mood"    value={safeAvg(last30.map(d=>logMap[d]?.mood??0).filter(Boolean))?.toFixed(1) ?? null} unit="out of 5"  color="#8a6030"/>
+            <MetricCard label="Avg Energy"  value={safeAvg(last30.map(d=>logMap[d]?.energy??0).filter(Boolean))?.toFixed(1) ?? null} unit="out of 10" color={C.green}/>
+            <MetricCard label="Avg Prod."   value={safeAvg(last30.map(d=>logMap[d]?.productivity??0).filter(Boolean))?.toFixed(1) ?? null} unit="out of 10" color={C.purple}/>
           </div>}
           <Divider label="Wellness Trends"/>
           <div style={{background:C.s1,border:`1px solid ${C.border}`,borderRadius:8,padding:"18px 20px"}}>
