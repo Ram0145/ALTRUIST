@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&family=Lora:ital@1&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #080809;
+  --s0:        #0c0c0f;
+  --s1:        #101014;
+  --s2:        #161619;
+  --border:    #1c1c22;
+  --border-hi: #28282f;
+  --text:      #e2ddd6;
+  --t2:        #6a6978;
+  --t3:        #35343d;
+  --gold:      #b87c2e;
+  --green:     #2d8056;
+  --red:       #8a3530;
+  --purple:    #5a44a0;
+  --blue:      #2d5fa0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+input, textarea, select {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(40%);
+}
