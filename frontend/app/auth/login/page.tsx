@@ -220,7 +220,7 @@ export default function LoginPage() {
 
           <div style={{textAlign:"center",fontSize:13,color:C.t2}}>
             {mode === "login"
-              ? <>Don't have an account?{" "}<button onClick={() => { setMode("signup"); setError(""); }} style={{background:"none",border:"none",color:C.gold,cursor:"pointer",fontSize:13}}>Sign up</button></>
+              ? <>Don&apos;t have an account?{" "}<button onClick={() => { setMode("signup"); setError(""); }} style={{background:"none",border:"none",color:C.gold,cursor:"pointer",fontSize:13}}>Sign up</button></>
               : <>Already have an account?{" "}<button onClick={() => { setMode("login"); setError(""); }} style={{background:"none",border:"none",color:C.gold,cursor:"pointer",fontSize:13}}>Sign in</button></>
             }
           </div>

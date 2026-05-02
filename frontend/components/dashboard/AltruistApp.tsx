@@ -526,7 +526,7 @@ export default function AltruistApp({ user, onSignOut }: Props) {
           {/* Quote */}
           <div className="fade" style={{marginTop:14,background:C.s1,border:`1px solid ${C.border}`,borderLeft:`3px solid ${C.gold}`,borderRadius:8,padding:"16px 18px 14px"}}>
             <div style={{fontSize:10,color:C.gold,textTransform:"uppercase",letterSpacing:"1.5px",fontWeight:700,marginBottom:10}}>Quote of the day</div>
-            <div style={{fontFamily:"Lora,serif",fontStyle:"italic",fontSize:15,color:C.text,lineHeight:1.75,marginBottom:10}}>"{quote.text}"</div>
+            <div style={{fontFamily:"Lora,serif",fontStyle:"italic",fontSize:15,color:C.text,lineHeight:1.75,marginBottom:10}}>&quot;{quote.text}&quot;</div>
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
               <div><span style={{fontSize:12,color:C.t2,fontWeight:500}}>{quote.author}</span><span style={{fontSize:11,color:C.t3}}> · {quote.source}</span></div>
               <button onClick={()=>setQOffset(o=>(o+1)%QUOTES.length)} style={{background:"transparent",border:`1px solid ${C.border}`,borderRadius:5,color:C.t3,padding:"3px 10px",cursor:"pointer",fontSize:12}}>next ↻</button>
